@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="column">
             <p>Únete a nuestra comunidad y mantente informado con nuestras últimas publicaciones:</p>
             <div className="buttons is-centered">
-              <Link className="button is-link" to="/subscribe">Suscríbete a nuestra pagina</Link>
+              <Link className="button is-link" to="/subscribe">Suscríbete</Link>
               <Link className="button is-info" to="/contact">Contáctanos</Link>
             </div>
           </div>
