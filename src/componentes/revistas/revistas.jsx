@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
+emmma
 const Revistas = () => {
   const [revistas, setRevistas] = useState([]);
 
