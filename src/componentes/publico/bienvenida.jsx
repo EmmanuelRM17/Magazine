@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Welcome = () => {
   return (
-    <section className="hero" style={{ backgroundColor: '#14161A', padding: '50px 0', minHeight: '70vh' }}>
+    <section className="hero" style={{ backgroundColor: '#90a8cf', padding: '50px 0', minHeight: '70vh' }}>
       <div className="hero-body">
         <div className="container has-text-centered">
           <motion.div
@@ -19,9 +19,6 @@ const Welcome = () => {
             </h2>
             <div className="columns is-vcentered is-centered">
               <div className="column is-half">
-                <p className="has-text-white" style={{ margin: '20px 0', fontSize: '1.2rem' }}>
-                  Disfruta de contenido exclusivo en tecnología
-                </p>
               </div>
             </div>
           </motion.div>

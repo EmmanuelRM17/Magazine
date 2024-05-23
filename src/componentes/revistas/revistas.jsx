@@ -24,7 +24,7 @@ const Revistas = () => {
   return (
     <section className="section" style={{ backgroundColor: '#F5F5F5', padding: '50px 0' }}>
       <div className="container">
-        <h1 className="title has-text-centered">Revistas Científicas de Diseño e Implementación de yare</h1>
+        <h1 className="title has-text-centered">Diseño e Implementación de caracter cientifico</h1>
         <div className="columns is-multiline">
           {revistas.map(revista => (
             <div className="column is-one-third" key={revista.id}>
