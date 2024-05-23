@@ -20,7 +20,7 @@ const Welcome = () => {
             <div className="columns is-vcentered is-centered">
               <div className="column is-half">
                 <p className="has-text-white" style={{ margin: '20px 0', fontSize: '1.2rem' }}>
-                  Disfruta de contenido exclusivo en tecnología, salud, moda, negocios y más.
+                  Disfruta de contenido exclusivo en tecnología
                 </p>
               </div>
             </div>
