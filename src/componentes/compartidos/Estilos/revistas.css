@@ -67,7 +67,7 @@
   }
   
   .card-text {
-    color: #c7bbbb;
+    color: #0e0a0a;
     font-size: 1em;
     margin-bottom: 20px;
   }
@@ -101,7 +101,7 @@
     color: white;
   }
   .btn-descargar{
-    background-color: red;
+    background-color: rgb(194, 74, 74);
     width: 100%;
     color: white;
     width: 100%;

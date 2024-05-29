@@ -98,10 +98,6 @@ export default function Component() {
                   }}
                   width="80"
                 />
-                <div className="text-center">
-                  <h3 className="text-lg font-semibold">Sofia Davis</h3>
-                  <p className="text-gray-500 dark:text-gray-400">CEO</p>
-                </div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   Sofia is the visionary behind our company, leading the team with her passion for innovation and
                   customer success.
@@ -119,10 +115,6 @@ export default function Component() {
                   }}
                   width="80"
                 />
-                <div className="text-center">
-                  <h3 className="text-lg font-semibold">Jackson Lee</h3>
-                  <p className="text-gray-500 dark:text-gray-400">CTO</p>
-                </div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   Jackson is our technical mastermind, driving innovation and ensuring the quality of our solutions.
                 </p>
@@ -139,10 +131,6 @@ export default function Component() {
                   }}
                   width="80"
                 />
-                <div className="text-center">
-                  <h3 className="text-lg font-semibold">Olivia Nguyen</h3>
-                  <p className="text-gray-500 dark:text-gray-400">COO</p>
-                </div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   Olivia is the driving force behind our operational excellence, ensuring that we deliver exceptional
                   results for our clients.
@@ -160,10 +148,6 @@ export default function Component() {
                   }}
                   width="80"
                 />
-                <div className="text-center">
-                  <h3 className="text-lg font-semibold">Liam Hernandez</h3>
-                  <p className="text-gray-500 dark:text-gray-400">VP of Sales</p>
-                </div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                   Liam is our sales leader, building strong relationships with our clients and ensuring that we deliver
                   the best solutions for their needs.
