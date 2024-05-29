@@ -5,12 +5,12 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Footer = () => {
   return (
-    <footer className="footer has-background-black has-text-white">
+    <footer className="footer has-background-white has-text-black">
       <div className="content has-text-centered" style={{ borderTop: '1px solid white', borderBottom: '1px solid white', padding: '2rem 0' }}>
         <div className="columns">
           <div className="column">
+            <p>Mision:</p>
             <p>Nuestra misión es ofrecerte las mejores revistas interactivas y contenido exclusivo en una variedad de categorías.</p>
-            <p>Magazine es tu plataforma de referencia para contenido de alta calidad en tecnología, salud, moda, negocios y más.</p>
           </div>
           <div className="column">
             <p>Únete a nuestra comunidad y mantente informado con nuestras últimas publicaciones:</p>
@@ -36,8 +36,9 @@ const Footer = () => {
               <i className="fab fa-linkedin-in"></i>
             </a>
           </div>
+
         </div>
-        <p>© 2024 Magazine. Todos los derechos reservados.</p>
+        <p>© 2024 Todos los derechos reservados.</p>
       </div>
     </footer>
   );
