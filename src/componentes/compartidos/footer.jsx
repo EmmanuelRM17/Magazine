@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="content has-text-centered" style={{ borderTop: '1px solid white', borderBottom: '1px solid white', padding: '2rem 0' }}>
         <div className="columns">
           <div className="column">
-            <p>Mision:</p>
+            
             <p>Nuestra misión es ofrecerte las mejores revistas interactivas y contenido exclusivo en una variedad de categorías.</p>
           </div>
           <div className="column">

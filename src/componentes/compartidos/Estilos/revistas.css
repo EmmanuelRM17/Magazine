@@ -51,7 +51,7 @@
   
   .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(208, 228, 155, 0.2);
+    box-shadow: 0 8px 16px rgba(166, 155, 228, 0.2);
   }
   
   .card-content {
@@ -60,7 +60,7 @@
   }
   
   .card-title {
-    color: #333333;
+    color: #0c0c0c;
     margin-bottom: 10px;
     font-size: 1.5em;
     font-weight: bold;
@@ -98,7 +98,7 @@
   }
 
   .navbar-item{
-    color: white;
+    color: rgb(192, 185, 185);
   }
   .btn-descargar{
     background-color: rgb(194, 74, 74);
