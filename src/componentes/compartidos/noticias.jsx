@@ -6,6 +6,19 @@ import img from '../Imagenes/Noticias.jpg';
 
 // URL de la imagen estática a mostrar cuando una noticia no tiene imagen
 const defaultImage = img;
+
+const translations = {
+    'Author': 'Autor',
+    'Published at': 'Publicado en',
+    'Content': 'Contenido',
+    'Source': 'Fuente',
+    'URL': 'Enlace'
+};
+
+const translate = (text) => {
+    return translations[text] || text;
+};
+
 const Noticias = () => {
     const [news, setNews] = useState([]);
     const [selectedNews, setSelectedNews] = useState(null);
@@ -18,12 +31,32 @@ const Noticias = () => {
         fetch(url)
             .then(response => response.json())
             .then(data => {
-                setNews(data.articles);
+                const translatedArticles = data.articles.map(article => ({
+                    ...article,
+                    title: translateText(article.title),
+                    description: translateText(article.description),
+                    content: translateText(article.content),
+                    author: translateText(article.author),
+                    source: {
+                        ...article.source,
+                        name: translateText(article.source.name)
+                    }
+                }));
+                setNews(translatedArticles);
             })
             .catch(error => {
                 console.error('Error al obtener las noticias:', error);
             });
     }, []);
+
+    const translateText = (text) => {
+        // Aquí puedes usar cualquier método de traducción, esto es un ejemplo simple
+        // En producción, deberías usar una API de traducción
+        if (!text) return '';
+        return text.replace(/Author|Published at|Content|Source|URL/gi, matched => {
+            return translations[matched] || matched;
+        });
+    };
 
     const openModal = (article) => {
         setSelectedNews(article);
@@ -119,22 +152,21 @@ const Noticias = () => {
                     <div className="modal-content" style={{ padding: '20px', maxWidth: '800px', margin: 'auto', backgroundColor: 'white', color: 'black', borderRadius: '10px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' }}>
                         <h3 className="title is-3" style={{color: 'black'}}>{selectedNews.title}</h3>
                         <div className="content">
-                            <p><strong style={{color: 'black'}}>Autor:</strong> {selectedNews.author}</p>
-                            <p><strong style={{color: 'black'}}>Publicado en:</strong> {selectedNews.publishedAt}</p>
+                            <p><strong style={{color: 'black'}}>{translate('Author')}:</strong> {selectedNews.author}</p>
+                            <p><strong style={{color: 'black'}}>{translate('Published at')}:</strong> {selectedNews.publishedAt}</p>
                             <p>{selectedNews.description}</p>
-                            <p><strong style={{color: 'black'}}>Contenido:</strong> {selectedNews.content}</p>
-                            <p><strong style={{color: 'black'}}>Fuente:</strong> {selectedNews.source.name}</p>
+                            <p><strong style={{color: 'black'}}>{translate('Content')}:</strong> {selectedNews.content}</p>
+                            <p><strong style={{color: 'black'}}>{translate('Source')}:</strong> {selectedNews.source.name}</p>
                             {selectedNews.urlToImage && (
                                 <img src={selectedNews.urlToImage} alt={selectedNews.title} style={{ maxWidth: '100%', height: 'auto', marginTop: '20px', borderRadius: '10px' }} />
                             )}
-                            <p><strong style={{color: 'black'}}>URL:</strong> <a href={selectedNews.url} target="_blank" rel="noopener noreferrer">{selectedNews.url}</a></p>
+                            <p><strong style={{color: 'black'}}>{translate('URL')}:</strong> <a href={selectedNews.url} target="_blank" rel="noopener noreferrer">{selectedNews.url}</a></p>
                         </div>
                     </div>
                     <button className="modal-close is-large" aria-label="close" onClick={closeModal}></button>
                 </div>
             )}
-
-        </section >
+        </section>
     );
 };
 
