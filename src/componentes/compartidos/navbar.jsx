@@ -16,14 +16,14 @@ const Navbar = () => {
         <Link className="navbar-item" to="/">
           <img src={Logo} alt="CapLogo" />
         </Link>
-        <div className={navbar-burger burger ${showMenu ? 'is-active' : ''}} onClick={toggleMenu}>
+        <div className={`navbar-burger burger ${showMenu ? 'is-active' : ''}`} onClick={toggleMenu}>
           <span></span>
           <span></span>
           <span></span>
         </div>
       </div>
 
-      <div className={navbar-menu ${showMenu ? 'is-active' : ''}}>
+      <div className={`navbar-menu ${showMenu ? 'is-active' : ''}`}>
         <div className="navbar-start">
           <Link className="navbar-item" to="/" style={{ color: 'black' }}>
             Inicio
