@@ -7,6 +7,7 @@ import Revistas from './componentes/revistas/revistas';
 import RevistaCompleta from './componentes/revistas/revistacompleta';
 import Colecciones from './componentes/colecciones/colecciones';
 import Component from './componentes/compartidos/AcercaDe';
+import Noticias from './componentes/compartidos/noticias'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<LayoutConEncabezado><Welcome /></LayoutConEncabezado>} />
         <Route path="/revistas" element={<LayoutConEncabezado><Revistas /></LayoutConEncabezado>} />
+        <Route path="/categoria/Noticias" element={<LayoutConEncabezado><Noticias /></LayoutConEncabezado>} />
         <Route path="/revistacompleta" element={<LayoutConEncabezado><RevistaCompleta /></LayoutConEncabezado>} />
         <Route path="/colecciones" element={<LayoutConEncabezado><Colecciones /></LayoutConEncabezado>} />
         <Route path="/about" element={<LayoutConEncabezado><Component/></LayoutConEncabezado>} />
