@@ -36,10 +36,10 @@ const Navbar = () => {
               Categorías
             </Link>
             <div className="navbar-dropdown is-boxed" style={{ backgroundColor: 'white' }}>
-              <Link className="navbar-item" to="/categoria/Tecnologia" style={{ color: 'black',backgroundColor: 'white' }}>
+              <Link className="navbar-item" to="/categoria/tecnologia" style={{ color: 'black',backgroundColor: 'white' }}>
                 Tecnologia
               </Link>
-              <Link className="navbar-item" to="/categoria/Noticias" style={{ color: 'black', backgroundColor: 'white' }}>
+              <Link className="navbar-item" to="/categoria/noticias" style={{ color: 'black', backgroundColor: 'white' }}>
                 Noticias
               </Link>
             </div>
