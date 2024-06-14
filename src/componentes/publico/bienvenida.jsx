@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Welcome = () => {
 
-
+ 
   return (
     <section className="hero" style={{ backgroundColor: '#6a6f77', padding: '10px 0', minHeight: '70vh' }}>
     <div className="hero-body">

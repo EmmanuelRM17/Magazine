@@ -50,6 +50,7 @@ const Navbar = () => {
             <a className="navbar-link" href="#">
               Categorías
             </a>
+            
             <div className="navbar-dropdown">
               {categorias.map(categoria => (
                 <a key={categoria.id} className="navbar-item" href={`/categoria/${categoria.id}`}>
