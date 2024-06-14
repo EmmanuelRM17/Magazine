@@ -67,7 +67,7 @@ const Welcome = () => {
             transition={{ duration: 1 }}
           >
             <h1 className="title has-text-white" style={{ fontSize: '3rem', fontWeight: 'bold' }}>
-              Bienvenido
+              Bienvenido Yare
             </h1>
             <h2 className="subtitle has-text-white" style={{ fontSize: '1.5rem', marginBottom: '2rem' }}>
               Las mejores revistas interactivas en un solo lugar.
